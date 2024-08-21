@@ -1,15 +1,21 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "projekt-electronic-tech-log": "Projekt Electronic Tech Log",
+  "blog": "Blog",
+  "learning-objectives": {
+    "title": "Learning Objectives",
+    "type": "page"
+  },
   "about": {
     "title": "About",
     "type": "page"
-  },
+  }
+  ,
+
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "href": "/",
+    "newWindow": false
   }
 }
