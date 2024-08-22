@@ -1,0 +1,42 @@
+# Hvad er en docker container?
+
+**Læringsmål:**  
+**Backend**  
+**Viden**  
+Jeg har basal viden om hvad en docker container er
+
+## Introduktion
+
+I denne artikel vil jeg gå i dybden med læringsmålet som beskrevet ovenfor. Hvis jeg kan fyldestgørende forklare hvad en docker container er, hvorfor det er en smart teknologi og hvornår det er godt at bruge. Så vil jeg vurdere, at læringsmålet er nået.
+
+### Hvad er en docker container?
+
+En Docker container er et isoleret miljø som kan virtualisere applikationer. Tænk på det som en lille selvstændig pakke osm indeholder alt hvad en applikation har brug for at køre, såsom kode, runtime, systembiblioteker osv. Det er lidt som en mini-version af et operativ system, men skræddersyet til en specifik applikation.
+
+### Hvorfor er Docker så smart?
+
+Hver container kører isoleret fra andre containere og værtsmaskinen. Det betyder, at en fejl i en container ikke påvirker andre containere.
+
+En container kan køre på stort set alle maskiner, som har Docker installeret. På den måde er det vildt nemt at flytte applikationer mellem forskellige maskiner.
+
+Det er nemt at skalere antallet af containere for at håndtere øget belastning på systemet. 
+
+Containere deler CPU ressourcer med værtsmaskinen, så de er mere effektive end traditionelle virtuelle maskiner. Traditionelle virtuelle maskiner skal man allokere ressourcer til som de optager 100% af, imens den virtuelle maskine er tændt. På en docker container kan man dog godt afgrænse hvor mange ressourcer den må bruge.
+
+Med alt ovenstående taget i betragtning så ville man kunne bygge backend i C\# og frontend i react. Så man på den måde bedre kan gøre brug af ens teams forskellige styrker. I tilfælde af øget trafik på backend af ens applikation kan man duplikere backend containerne og fordele belastningen på dem. Og hvis der opstår en fejl i eksempelvis backend containeren, så vil frontenden stadig vises til brugeren.   
+Det giver os som udviklere et hav af fordele.
+
+### Hvad er forskellen på et docker image og en docker container?
+
+Et docker image er en form for arkitekttegning af applikationen og operativ system som skal kører i containeren. Et docker image oprettes med en dockerfil, som man skriver de tekniske specifikationer for miljøet applikationen skal kører i, inde i den container som kommer til at kører det.
+
+### Hvordan kan to containere kommunikere?
+
+**Netværk**: Docker-containere kan konfigureres til at kommunikere med hinanden på forskellige måder, f.eks. via et fælles netværk eller ved hjælp af port-mapping.
+
+### Kilder:
+
+[https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/](https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/) 
+
+[https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
+

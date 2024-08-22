@@ -1,18 +1,24 @@
 {
   "index": "Introduktion",
-  "projekt-electronic-tech-log": "Projekt Beskrivelse",
-  "blog": "Blog",
   "lm-backend": "Læringsmål Backend",
   "lm-itsikkerhed": "Læringsmål IT Sikkerhed",
   "about": {
     "title": "About",
     "type": "page"
   },
+  "lm-backend": {
+    "title": "Læringsmål Backend",
+    "type": "page"
+  },
+  "lm-itsikkerhed": {
+    "title": "Læringsmål IT-Sikkerhed",
+    "type": "page"
+  },
 
   
 
   "contact": {
-    "title": "Contact ↗",
+    "title": "LinkedIn ↗",
     "type": "page",
     "href": "https://www.linkedin.com/in/mathiasholmgaard/",
     "newWindow": true
