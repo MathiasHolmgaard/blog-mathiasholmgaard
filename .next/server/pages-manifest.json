@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/2-Laeringsmaal/it-sikkerhed": "pages/2-Laeringsmaal/it-sikkerhed.js"
+  "/3-Projekt/projekt-beskrivelse": "pages/3-Projekt/projekt-beskrivelse.js",
+  "/5-Refleksion/uge-34": "pages/5-Refleksion/uge-34.js"
 }

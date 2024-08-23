@@ -15,10 +15,15 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/2-Laeringsmaal/it-sikkerhed": [
+    "/3-Projekt/projekt-beskrivelse": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/2-Laeringsmaal/it-sikkerhed.js"
+      "static/chunks/pages/3-Projekt/projekt-beskrivelse.js"
+    ],
+    "/5-Refleksion/uge-34": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/5-Refleksion/uge-34.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
