@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Backend/u34-docker-containers": "pages/Backend/u34-docker-containers.js",
-  "/lm-itsikkerhed": "pages/lm-itsikkerhed.js",
-  "/lm-backend": "pages/lm-backend.js",
   "/": "pages/index.js"
 }
