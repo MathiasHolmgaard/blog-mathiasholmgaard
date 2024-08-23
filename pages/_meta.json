@@ -1,19 +1,11 @@
 {
-  "index": "Introduktion",
-  "lm-backend": "Læringsmål Backend",
-  "lm-itsikkerhed": "Læringsmål IT Sikkerhed",
+  "index": "1-Introduktion",
+  "2-Laeringsmaal": "2-Læringsmål",
   "about": {
-    "title": "About",
+    "title": "Om mig",
     "type": "page"
   },
-  "lm-backend": {
-    "title": "Læringsmål Backend",
-    "type": "page"
-  },
-  "lm-itsikkerhed": {
-    "title": "Læringsmål IT-Sikkerhed",
-    "type": "page"
-  },
+
 
   
 
