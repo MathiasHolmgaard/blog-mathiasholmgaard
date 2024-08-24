@@ -5,10 +5,16 @@
     "title": "Om mig",
     "type": "page"
   },
+  
 
 
   
-
+"portfolio": {
+    "title": "Portfolio ↗",
+    "type": "page",
+    "href": "https://www.mathiasholmgaard.com/",
+    "newWindow": true
+  },
   "contact": {
     "title": "LinkedIn ↗",
     "type": "page",
