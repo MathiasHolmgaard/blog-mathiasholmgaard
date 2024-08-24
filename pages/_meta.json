@@ -1,13 +1,6 @@
 {
   "index": "1-Introduktion",
   "2-Laeringsmaal": "2-Læringsmål",
-  "about": {
-    "title": "Om mig",
-    "type": "page"
-  },
-  
-
-
   
 "portfolio": {
     "title": "Portfolio ↗",
@@ -22,3 +15,4 @@
     "newWindow": true
   }
 }
+
