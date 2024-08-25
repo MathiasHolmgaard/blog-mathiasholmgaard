@@ -1,0 +1,175 @@
+# Business Case for Developing an Electronic Tech-Log (ETL) at Maersk Air Cargo (MAC)
+
+Denne business case er skrevet på engelsk med det formål at henvende sig til Maersk Air Cargo.
+
+
+## Company Overview:
+
+**Business Model:**  
+Maersk Air Cargo (MAC) operates as an Aircraft, Crew, Maintenance, and Insurance (ACMI) provider for UPS, with its main hub in Cologne, Germany. The company maintains a fleet of 11 Boeing 767 aircraft for this purpose. Additionally, MAC owns and operates a separate cargo company based in Billund, Denmark. This fleet consists of 2 Boeing 767 and 2 Boeing 777 aircraft, primarily servicing routes to China, with additional ad hoc charter operations.
+
+#### **Business Issues:**
+
+1. **Carbon Emissions Tracking:**  
+   * MAC faces challenges in accurately tracking and accounting for carbon emissions due to discrepancies between pilot entries in paper tech-logs and data entered in the current Electronic Flight Bag (EFB) system.  
+   * The current system lacks functionality for recording maintenance activities that result in additional fuel burn, such as starting the Auxiliary Power Unit (APU) during maintenance, posing a risk of significant fines due to inaccurate carbon footprint reporting.  
+2. **Data Management and Insight Generation:**  
+   * The current system does not effectively store data for future use in predictions or insights, hindering the company's ability to leverage data for operational improvements.  
+3. **Manual Data Reconciliation:**  
+   * MAC currently employs student workers to manually compare tech-log entries with the EFB system, a process that is time-consuming (30-40 hours per week) and prone to errors (discrepancies found 95% of the time).  
+4. **Flight Hours and Cycles Management:**  
+   * Managing flight hours and cycles is a significant challenge, contributing to inefficiencies in maintenance scheduling and compliance tracking.
+
+#### **Stakeholders:**
+
+* **Lars Jordahn (CEO):** Although not directly involved in the development process, his support is critical for project approval.  
+* **Steffen Vagt-Andersen (Maintenance Planning Manager):** Appointed as the Product Owner, Steffen will be closely involved in the development and implementation process.  
+* **Claus E. Nielsen (Vice President Technical):**  will act as Quality Assurance on the final product.  
+* **Student Workers:** Their insights into the manual reconciliation process will inform system requirements.  
+* **Pilots:** Select pilots will provide feedback on key functionalities and system usability.  
+* **Technicians:** Key technicians will contribute valuable insights into system requirements and user experience.  
+* **Danish CAA:** Has no direct interest in development, but they need to be consulted for approval of the final product. They may have some additional requirement to the system/product
+
+#### **System Users:**
+
+* **Technicians**  
+* **Pilots**  
+* **Administrators**
+
+---
+
+## Scenario Overview:
+
+**Scenario 0: Continue with the Current System**
+
+* **Pros:**  
+  * No immediate investment required.  
+  * Users are familiar with the current system and processes.  
+  * Avoidance of short-term disruptions during a system changeover.  
+* **Cons:**  
+  * Ongoing manual data reconciliation, leading to high labor costs and inefficiency.  
+  * Inconsistent carbon emissions tracking, increasing the risk of fines.  
+  * Lack of data storage for predictive analysis and insights.  
+  * Inefficient management of flight hours and cycles.
+
+**Scenario 1: Develop a Simple Electronic Tech-Log**
+
+* **Pros:**  
+  * Reduction in manual processes and associated labor costs.  
+  * Improved accuracy in carbon emissions tracking.  
+  * Better data storage for future analysis.  
+  * Provides a foundation for digital transformation with relatively lower initial investment.  
+  * Easier and faster to implement compared to a more complex solution.  
+* **Cons:**  
+  * Limited functionality compared to more sophisticated systems.  
+  * May still require some manual reconciliation.  
+  * Potential for future upgrades and associated costs.
+
+**Scenario 2: Develop a Sophisticated Electronic Tech-Log**
+
+* **Pros:**  
+  * Full automation of data entry and validation, reducing errors and labor costs.  
+  * Advanced features like predictive maintenance, fleet optimization, and smart recommendations, which can lead to long-term operational efficiencies.  
+  * Integration with other systems (e.g., CAMP, AMOS) for comprehensive fleet management.  
+  * Advanced reporting and compliance tracking, reducing regulatory risk.  
+  * Significant long-term operational efficiencies and data-driven decision-making.  
+  * Tailored to MAC’s specific operational needs, ensuring optimal functionality and user experience.  
+* **Cons:**  
+  * Higher initial development and implementation costs.  
+  * Longer development time and potential for disruption during rollout.  
+  * Greater complexity requiring ongoing maintenance and potential future updates.
+
+#### **Scenario 3: Acquire an Existing Electronic Tech-Log Provider**
+
+* **Pros:**  
+  * Immediate access to a mature, market-tested solution with proven reliability.  
+  * Comprehensive features and functionalities that are likely already compliant with industry standards and regulations.  
+  * Faster implementation and deployment compared to developing a custom solution from scratch.  
+  * The acquisition could include access to the provider’s expertise, support, and future software updates.  
+  * Integration capabilities with existing systems (e.g., EFB, maintenance software) are likely to be well-developed.  
+* **Cons:**  
+  * Higher upfront costs associated with acquisition and potential customization to meet specific MAC requirements.  
+  * Potential challenges in integrating the acquired system with MAC’s existing IT infrastructure.  
+  * Risk of vendor lock-in, limiting flexibility and potentially increasing long-term costs.  
+  * The acquired system may include features that MAC does not need, leading to inefficiencies or unnecessary complexity.  
+  * Cultural or operational misalignment between the acquired company and MAC’s internal processes could pose challenges during implementation.
+
+#### **Chosen scenario:** Scenario 1: Initial Implementation of a Simple Electronic Tech-Log
+
+* **Basis for the decision**:  
+  * It is decided to move along with scenario 1, as this alone can give a better overview of the company’s carbon emissions in the long term than the current system in place, and it can get rid of a lot of manual processes/labor. And if this delivers on its promise, development can continue to create a more sophisticated system.
+
+* **Main Goals:**  
+  * Eliminate manual processes associated with tech-log data entry and reconciliation.  
+  * Provide an accurate picture of MAC’s carbon emissions/carbon footprint.  
+  * Store valuable operational data for future use and analysis.  
+  * Reduce the costs associated with producing and storing paper tech-logs.  
+  * Enhance user experience for pilots and technicians through a seamless, digital interface.
+
+---
+
+## Business Solution Description:
+
+The proposed solution involves developing a simple electronic tech-log system that digitizes the logging process for aircraft maintenance and operational activities. This system will capture, store, and manage tech-log entries in a centralized database, allowing for easy access, retrieval, and reporting. The primary focus is on reducing manual processes, improving the accuracy of carbon emissions tracking, and laying the groundwork for future enhancements.
+
+The system will be user-friendly, ensuring quick adoption by technicians and pilots, and may integrate with existing EFB systems to streamline data flow and enhance overall operational efficiency.
+
+---
+
+## IT Solution Description:
+
+* **Backend Architecture:**   
+  * A microservices-based architecture will be employed to ensure scalability, modularity, and ease of maintenance. Each service will handle specific functionalities, such as data ingestion, storage, reporting, and user management.
+
+* **Frontend Development:**   
+  * A React Native framework will be used for the front-end, enabling the development of both web and iOS applications. This will provide a consistent user experience across different devices and platforms.
+
+---
+
+## Business Effects:
+
+**Financial Effects:**
+
+* **Initial Costs:** No significant costs for the initial design and development phase, though costs may arise from further development.  
+* **Operational Costs:** Expenses will include hosting (e.g., Azure) and ongoing maintenance once the system is deployed.  
+* **Cost Reductions:**  
+  * Significant reduction in costs associated with paper tech-logs (production, storage and handling).  
+  * Substantial savings in labor costs due to the elimination of manual data reconciliation. 
+
+**Gains:**
+
+* Improved accuracy in carbon emissions reporting, reducing the risk of fines.  
+* Enhanced data management, providing a foundation for predictive maintenance and future insights.  
+* Streamlined processes, resulting in more efficient operations and reduced operational costs.
+
+**Risks:**
+
+* **Implementation Risks:** Potential challenges during system rollout, including user adoption and initial data migration.  
+* **Operational Risks:** Dependence on IT infrastructure for system availability; potential downtime could impact operations.
+
+---
+
+## Implementation and Follow-Up:
+
+An agreement has been established with a software development team to handle the initial development, implementation, maintenance, and potential further development of the system. To ensure no data loss during the transition, the electronic tech-log system will run in parallel with the current paper-based system for 2-3 months. This period will allow for thorough testing and user feedback, ensuring a smooth transition.
+
+---
+
+## Profit Realization:
+
+**Key Performance Indicators (KPIs):**
+
+* **Reduction in Manual Labor:** Measure the decrease in hours spent on manual tech-log reconciliation.  
+* **Accuracy of Carbon Emissions Reporting:** Track the accuracy and consistency of emissions data.  
+* **User Adoption Rate:** Monitor the rate at which pilots and technicians adopt the new system.  
+* **Cost Savings:** Quantify savings in paper costs, storage, and manual labor.  
+* **Data Utilization:** Evaluate the extent to which stored data is used for insights, predictions, and operational improvements.
+
+**Timeframes:**
+
+* **Development:** 4 months for initial system development and testing.  
+* **Parallel Operation:** 2-3 months of running the new system alongside the current paper-based process.  
+* **Full Implementation:** Targeted for completion within 6-8 months.
+
+By tracking these KPIs over the course of implementation and beyond, MAC can ensure that the investment in the electronic tech-log system delivers measurable value and supports the company’s long-term operational goals.
+
