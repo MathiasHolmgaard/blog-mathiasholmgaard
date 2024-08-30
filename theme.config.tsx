@@ -10,9 +10,9 @@ const config: DocsThemeConfig = {
   //   link: 'https://discord.com',
   // },
   // docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  // footer: {
-  //   text: 'Nextra Docs Template',
-  // },
+  footer: {
+    text: 'Mathias Holmgaard',
+  },
 }
 
 export default config
