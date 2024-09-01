@@ -2,7 +2,18 @@
 
 I denne uge har vi arbejdet på user stories og besluttet os for at denne sprint skulle handle om denne user story: 
 
-## Jeg som Pilot vil have mulighed for at starte en flyvetur/entry, med preflight inspections.
+# US#1 
+***Jeg som Pilot vil have mulighed for at starte en flyvetur/entry, med preflight inspections.***
+
+Nedenfor kan man se et udklip af en techlog. Dette er papiret som vi vil digitalisere med vores projekt på dette semester.
+
+***Med denne userstory vil vi kun arbejde med den venstre side af tech loggen***, fordi det er KUN den som piloten skal bruge til at udfylde de nødvendige oplysninger.
+
+Med artefakterne i denne iteration vil vi danne os et overblik over de stamdata som er nødvendige for at lave et system til denne user story.
+
+## High Level design
+![Objekt Model](public/uge-35/techlogmarkeretseqnumber.png)
+
 
 Til den user story har vi udarbejdet disse artefakter:
 ### Objekt model
@@ -10,9 +21,36 @@ Vi har optegnet alle nødvendige objekter for et system som udfylder behovet i d
 
 ![Objekt Model](public/uge-35/om-iteration1.webp)
 
+### Domæne model 
+Med domæne modellen har vi optegnet relationerne mellem de ønskede klasser. Det vil give udviklerteamet og kunden en fælles forståelse af produktet.
+
 ![Domæne Model](public/uge-35/dm-iteration1.webp)
 
+## Low level design
+### Design Class Diagram
+
+Med vores DCD begynder vi at gøre os overvejelser om hvordan vi vil implementere systemet.
+Vores overvejelser i dette stadie vedrørende IT-sikkerhed er at følge princippet: Principle of least priviledge (Source: [https://csrc.nist.gov/glossary/term/least_privilege](https://csrc.nist.gov/glossary/term/least_privilege) )
+
+På dette niveau kan vi tillade dataadgang mellem klasser som ikke nødvendigvis har behov for at kommunikere. Dette kan ondsindet aktører udnytte på følgende måder:
+1. **Injection:** Hvis en klasse tillader, at brugerindtastet input direkte bruges i forespørgsler eller kommandoer, kan det føre til injektionsangreb (f.eks. SQL-injektion, kommandoinjektion).  
+2. **Broken Authentication:** Hvis en klasse håndterer godkendelse og autorisation, kan sårbarheder som svage adgangskoder eller usikker sessionstyring udnyttes.  
+3. **Sensitive Data Exposure:** Hvis en klasse gemmer eller behandler følsomme data (f.eks. personlige oplysninger, legitimationsoplysninger), er det afgørende at sikre, at dataene er beskyttet mod uautoriseret adgang eller offentliggørelse.  
+4. **Cross-Site Scripting (XSS):** Hvis en klasse håndterer brugergenereret indhold og ikke renser det korrekt, kan XSS-angreb være mulige.  
+5. **Broken Access Control:** Hvis en klasse styrer adgang til ressourcer, kan sårbarheder som utilstrækkelig autorisation eller forkert rollebaseret adgangskontrol udnyttes.  
+6. **Security Misconfiguration:** Hvis en klasse bruger standardkonfigurationer eller har kendte sårbarheder, kan den udnyttes.  
+7. **Cryptographic Failures:** Hvis en klasse håndterer kryptografiske operationer, kan sårbarheder som svage algoritmer eller forkert nøglehåndtering udnyttes.  
+8. **Insecure Design:** Hvis en klasse er designet på en måde, der gør den sårbar over for angreb (f.eks. manglende inputvalidering, usikre standardværdier), kan den udnyttes.  
+9. **Using Components with Known Vulnerabilities:** Hvis en klasse bruger komponenter med kendte sårbarheder, kan disse sårbarheder udnyttes.  
+10. **Insufficient Logging & Monitoring:** Hvis en klasse mangler tilstrækkelig logning og overvågning, kan det være svært at detektere og reagere på angreb.
+
+Kilde:   
+[https://owasp.org/www-project-top-ten/](https://owasp.org/www-project-top-ten/) 
+
+
 ![Design Class Diagram](public/uge-35/dcd-iteration1.png)
+
+
 
 ### Github projektstyring 
 
