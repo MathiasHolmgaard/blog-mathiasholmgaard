@@ -1,0 +1,23 @@
+# OWASP10
+## Injection
+
+Injection er en af de mest almindelige sårbarheder indenfor OWASP Top 10 listen. Det refererer til en situation, hvor en angriber kan indsætte ondsindet kode eller kommandoer i en applikation, som derefter udføres af applikationen. Dette kan ske, når applikationen ikke korrekt validerer eller filtrerer brugerinput, hvilket giver angriberen mulighed for at manipulere applikationens logik.
+
+Konsekvenserne af at have en sårbarhed for injection kan være alvorlige. Angriberen kan udnytte denne sårbarhed til at udføre forskellige former for angreb, såsom SQL-injection, OS-command injection eller LDAP-injection. Disse angreb kan resultere i uautoriseret adgang til applikationens data, manipulation af data, udførelse af ondsindede kommandoer på værtsmaskinen eller endda fuldstændig kompromittering af systemet.
+
+For at udnytte en sårbarhed for injection skal angriberen identificere de områder i applikationen, hvor brugerinput ikke er korrekt valideret eller filtreret. Derefter kan angriberen indsætte ondsindet kode eller kommandoer i disse områder for at manipulere applikationens logik og opnå uautoriseret adgang eller udføre skadelige handlinger.
+
+Det kan eksempelvis se sådan ud:
+```
+Username: admin' OR '1'='1' --
+Password: anything
+```
+
+Her kan man finde flere [payloads](https://book.hacktricks.xyz/pentesting-web/sql-injection) 
+
+Det er også vigtigt at holde applikationen opdateret med de seneste sikkerhedsopdateringer og patches, da mange sårbarheder for injection kan udnytte kendte sårbarheder i applikationsrammer eller tredjepartsbiblioteker.
+
+Ved at være opmærksom på sårbarheden for injection og implementere de nødvendige sikkerhedsforanstaltninger kan man minimere risikoen for at blive offer for denne type angreb og sikre applikationens integritet og fortrolighed.
+
+Kilde:
+[OWASP10](https://owasp.org)
