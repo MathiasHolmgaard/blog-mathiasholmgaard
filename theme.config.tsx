@@ -2,10 +2,12 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
+  
   logo: <span>Mathias Holmgaard</span>,
   project: {
     link: 'https://github.com/MathiasHolmgaard/documentation-blog',
   },
+  
   // chat: {
   //   link: 'https://discord.com',
   // },
