@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   
-  logo: <span>Mathias Holmgaard</span>,
+  logo: <span>Electronic Tech Log</span>,
   project: {
     link: 'https://github.com/MathiasHolmgaard/documentation-blog',
   },
