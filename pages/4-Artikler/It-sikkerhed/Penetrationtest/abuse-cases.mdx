@@ -1,0 +1,76 @@
+# Abuse Cases
+
+## Hvad er Abuse Cases?
+
+Abuse Cases er en metode inden for softwareudvikling og sikkerhed, der bruges til at identificere og beskrive potentielle trusler og angreb på et system. De er en udvidelse af brugstilfælde, men fokuserer på, hvordan en angriber kan misbruge systemet i stedet for, hvordan en legitim bruger interagerer med det.
+
+### Formål med Abuse Cases
+
+* Identifikation af trusler: Hjælper med at identificere potentielle sikkerhedstrusler og sårbarheder i systemet.  
+* Forbedring af sikkerhed: Giver indsigt i, hvordan systemet kan beskyttes mod forskellige typer af angreb.  
+* Risikovurdering: Hjælper med at vurdere risikoen forbundet med forskellige trusler og prioritere sikkerhedsforanstaltninger.
+
+### Komponenter i Abuse Cases
+
+1. Titel: En kort beskrivelse af Use case.  
+2. Beskrivelse: En detaljeret beskrivelse af, hvordan misbruget kan foregå.  
+3. Aktør: Den person eller enhed, der udfører misbruget (ofte en angriber).  
+4. Forudsætninger: De betingelser, der skal være opfyldt for, at misbruget kan finde sted.  
+5. Handlinger: De trin, som aktøren tager for at udføre misbruget.  
+6. Konsekvenser: De potentielle konsekvenser af misbruget for systemet og dets brugere.  
+7. Modforanstaltninger: Forslag til, hvordan systemet kan beskyttes mod dette misbrug.
+
+### Eksempel på en Abuse Case
+
+#### Titel: Uautoriseret adgang til brugerdata
+
+* Beskrivelse: En angriber forsøger at få uautoriseret adgang til følsomme brugerdata ved at udnytte en sårbarhed i systemet.  
+* Aktør: Angriber  
+* Forudsætninger: Angriberen har kendskab til en sårbarhed i systemet.  
+* Handlinger:  
+  1. Angriberen identificerer en sårbarhed i login-funktionen.  
+  2. Angriberen udnytter sårbarheden til at omgå autentificering.  
+  3. Angriberen får adgang til følsomme brugerdata.  
+* Konsekvenser: Uautoriseret adgang til følsomme data kan føre til datatyveri, tab af tillid og potentielle juridiske konsekvenser.  
+* Modforanstaltninger: Implementering af stærkere autentificeringsmekanismer, regelmæssig sikkerhedstestning og overvågning af systemet for mistænkelig aktivitet.
+
+### Konklusion
+
+Abuse cases er et værdifuldt værktøj til at forbedre sikkerheden i softwareudvikling ved at identificere og beskrive potentielle trusler og angreb. Ved at forstå og dokumentere, hvordan et system kan misbruges, kan udviklere og sikkerhedseksperter bedre beskytte systemet mod faktiske angreb.
+
+## Hvordan bestemmes kvalitetskriterier for abuse cases?
+
+Når man udfærdiger kvalitetskriterier for abuse cases, er det vigtigt at tage højde for flere faktorer, der kan påvirke sikkerheden og robustheden af systemet. Her er nogle eksempler på, hvordan kvalitetskriterier kan bestemmes:
+
+1. Relevans og Aktualitet:  
+   * Eksempel: Kvalitetskriterierne skal tage højde for de nyeste trusler og sårbarheder, som er relevante for systemet. Dette kan inkludere opdaterede trusselsmodeller og de seneste sikkerhedsbulletiner fra pålidelige kilder som OWASP og NIST.  
+2. Dækning af Sikkerhedsområder:  
+   * Eksempel: Kvalitetskriterierne skal sikre, at alle væsentlige sikkerhedsområder er dækket, herunder autentificering, autorisation, dataintegritet, konfidencialitet og tilgængelighed. Dette kan indebære at sikre, at der er passende mekanismer på plads for at beskytte mod SQL-injektion, XSS, CSRF og andre almindelige angreb.  
+3. Specificitet og Klarhed:  
+   * Eksempel: Kvalitetskriterierne skal være specifikke og klare, så de er lette at forstå og anvende. For eksempel kan et kvalitetskriterium være, at alle adgangskontrolmekanismer skal logge forsøg på uautoriseret adgang og generere alarmer ved gentagne forsøg.  
+4. Målbarhed:  
+   * Eksempel: Kvalitetskriterierne skal være målbare, så det er muligt at vurdere, om de er opfyldt. Dette kan inkludere at definere specifikke metrikker, såsom antallet af opdagede og lukkede sårbarheder inden for en given tidsramme, eller tiden det tager at opdage og reagere på sikkerhedshændelser.  
+5. Testbarhed:  
+   * Eksempel: Kvalitetskriterierne skal være testbare, så de kan verificeres gennem sikkerhedstestning og revisioner. For eksempel kan et kriterium være, at alle inputfelter i webapplikationen skal valideres og sanitiseres for at forhindre injektionsangreb, og dette kan testes ved hjælp af automatiserede sikkerhedsværktøjer som Burp Suite.  
+6. Etik og Lovgivning:  
+   * Eksempel: Kvalitetskriterierne skal tage hensyn til etiske overvejelser og overholde gældende lovgivning og reguleringer. For eksempel kan et kriterium være, at alle persondata skal krypteres i hvile og under transmission i overensstemmelse med GDPR-kravene.
+
+### Implementering af Kvalitetskriterier
+
+For at implementere kvalitetskriterierne effektivt kan følgende trin følges:
+
+1. Identifikation af Trusler:  
+   * Brug trusselsmodeller og sikkerhedsvurderinger til at identificere potentielle trusler og sårbarheder i systemet.  
+2. Definering af Kriterier:  
+   * Udarbejd klare og specifikke kvalitetskriterier baseret på de identificerede trusler og bedste praksis inden for sikkerhed.  
+3. Test og Verifikation:  
+   * Udfør regelmæssige sikkerhedstest og revisioner for at verificere, at kvalitetskriterierne er opfyldt og for at identificere eventuelle mangler.  
+4. Kontinuerlig Forbedring:  
+   * Opdater og forbedr kvalitetskriterierne løbende baseret på nye trusler, teknologiske fremskridt og feedback fra sikkerhedstest og revisioner.
+
+Ved at følge disse trin og anvende kvalitetskriterierne systematisk kan man sikre, at abuse cases effektivt identificerer og adresserer potentielle sikkerhedstrusler, hvilket bidrager til et mere robust og sikkert system.  
+
+
+Kilder:
+
+[https://www.blackduck.com/blog/abuse-cases.html](https://www.blackduck.com/blog/abuse-cases.html)
