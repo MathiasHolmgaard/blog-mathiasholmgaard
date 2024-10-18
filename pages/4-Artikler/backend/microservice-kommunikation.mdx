@@ -8,17 +8,17 @@ I en microservices-arkitektur er kommunikation mellem tjenester afgørende for a
 
 Synkron kommunikation indebærer, at en tjeneste sender en forespørgsel til en anden tjeneste og venter på et svar, før den fortsætter. Dette mønster bruges ofte, når der er behov for øjeblikkelig feedback eller resultat fra den kaldte tjeneste.
 
-#### **Eksempler på synkron kommunikation:**
+#### Eksempler på synkron kommunikation:
 
 * **HTTP/REST:** En tjeneste sender en HTTP-forespørgsel til en anden tjeneste og venter på et svar.  
 * **gRPC:** En højtydende RPC-ramme, der bruger HTTP/2 til transport og Protocol Buffers til serialisering.
 
-#### **Fordele:**
+#### Fordele:
 
 * **Enkelhed:** Let at implementere og forstå.  
 * **Øjeblikkelig feedback:** Tjenesten får straks svar og kan handle derefter.
 
-#### **Ulemper:**
+#### Ulemper:
 
 * **Afhængighed:** Tjenester er afhængige af hinandens tilgængelighed og ydeevne.  
 * **Skalerbarhed:** Kan blive en flaskehals, hvis mange tjenester venter på svar samtidig.
@@ -28,17 +28,17 @@ Synkron kommunikation indebærer, at en tjeneste sender en forespørgsel til en 
 
 Asynkron kommunikation indebærer, at en tjeneste sender en besked til en anden tjeneste og fortsætter med sin behandling uden at vente på et svar. Dette mønster bruges ofte, når der ikke er behov for øjeblikkelig feedback, eller når tjenester skal kunne håndtere høj belastning uden at blive blokeret.
 
-#### **Eksempler på asynkron kommunikation:**
+#### Eksempler på asynkron kommunikation:
 
 * **Message Queues (f.eks. RabbitMQ, Kafka):** Tjenester sender beskeder til en kø, som andre tjenester kan læse fra og behandle.  
 * **Event-Driven Architecture:** Tjenester udsender hændelser, som andre tjenester kan abonnere på og reagere på.
 
-#### **Fordele:**
+#### Fordele:
 
 * **Løs kobling:** Tjenester er mindre afhængige af hinandens tilgængelighed og ydeevne.  
 * **Skalerbarhed:** Tjenester kan håndtere høj belastning uden at blive blokeret.
 
-#### **Ulemper:**
+#### Ulemper:
 
 * **Kompleksitet:** Mere kompleks at implementere og fejlsøge.  
 * **Forsinkelse:** Der kan være en forsinkelse, før beskeder behandles og svar modtages.
