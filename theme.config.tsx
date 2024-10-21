@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   
-  logo: <span>Electronic Tech Log</span>,
+  logo: <span>Maersk Air Cargo: Electronic Tech Log</span>,
   project: {
     link: 'https://github.com/MathiasHolmgaard/documentation-blog',
   },
@@ -15,6 +15,15 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Mathias Holmgaard',
   },
+  feedback: {
+    content: null,
+  },
+  editLink: {
+    text: null,
+  },
+  
+  
+  
 }
 
 export default config
